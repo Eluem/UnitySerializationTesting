@@ -4,8 +4,9 @@ using UnityEngine;
 
 namespace AYellowpaper.Samples
 {
-	public interface IInteractable
-	{
-		void Interact();
-	}
+    public interface IInteractable
+    {
+        public InterfaceReference<IInteractable> IInteractableReference { get; }
+        void Interact();
+    }
 }

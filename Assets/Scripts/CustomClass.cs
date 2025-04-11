@@ -23,11 +23,10 @@ public class CustomClass
     }
 
 
-    /*
+    //If you comment this out and then remove and readd _customClassBadDefaults to BehaviourWithDictionary, it'll actually use the defaults above
     public CustomClass(float pSomeFloatOne = 1, float pSomeFloatTwo = 2)
     {
         _someFloatOne = pSomeFloatOne;
         _someFloatTwo = pSomeFloatTwo;
     }
-    */
 }

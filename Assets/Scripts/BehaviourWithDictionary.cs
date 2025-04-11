@@ -9,8 +9,8 @@ public class BehaviourWithDictionary : MonoBehaviour
     [SerializedDictionary("Name", "Data")]
     [SerializeField] SerializedDictionary<string, CustomClass> _testSerializedDictionary = new SerializedDictionary<string, CustomClass>();
 
-    [SerializeField] CustomClass _CustomClassGoodDefaults = new CustomClass(); //If I initialize it, unity correctly uses the defaults
-    [SerializeField] CustomClass _CustomClassBadDefaults; //If I leave it null and let unity assume the defaults, they end up standard (0 for the floats in this case)
+    [SerializeField] CustomClass _customClassGoodDefaults = new CustomClass(); //If I initialize it, unity correctly uses the defaults
+    [SerializeField] CustomClass _customClassBadDefaults; //If I leave it null and let unity assume the defaults, they end up standard (0 for the floats in this case)
 
 
     public CustomClass GetData(string pName)
